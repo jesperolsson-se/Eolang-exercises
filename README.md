@@ -172,6 +172,8 @@ their own files and designed their boundaries such that the system is better
 equipped to evolve to meet contingent changes. Additionally, we had a first
 look into the fundamentals for unit testing our objects.
 
+## Leap year
+
 `mvn compile`
 
 `java -cp target/classes:target/eo-runtime.jar org.eolang.phi.Main sandbox.app YEAR`
