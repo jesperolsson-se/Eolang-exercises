@@ -1,0 +1,18 @@
++package sandbox
+
++alias stdout org.eolang.io.stdout
++alias sprintf org.eolang.txt.sprintf
+
+
+[args...] > app
+  [y] > leap
+    or. > @
+      and.
+        eq. (mod. y 4) 0
+        not. (eq. (mod. y 100) 0)
+      eq. (mod. y 400) 0
+  stdout > @
+    sprintf
+      "%d is %sa leap year!"
+      (args.get 0).toInt > year!
+      if. (leap year:y) "" "not "
