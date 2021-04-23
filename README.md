@@ -20,6 +20,13 @@ empathise with their notion of inauthenticity. The paradigm is often criticised
 for design constructs that run in counter with the fundamental concepts, simply
 because the program was implemented in, e.g., Java or C#.
 
+However, eolang looks like a fun puzzle even if we ignore the philsophical
+aspects. Even in normal situations, picking up a new language is likely to
+alter some aspect of how you think approach some problem or another, but EO
+takes this a few steps further. The syntax is obviously far from any C dialect
+and many common constructs (e.g., classes, mutability and operators) are
+forbidden by design.
+
 `mvn compile`
 
 `java -cp target/classes:target/eo-runtime.jar org.eolang.phi.Main sandbox.app YEAR`
