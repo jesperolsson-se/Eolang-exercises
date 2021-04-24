@@ -27,6 +27,14 @@ takes this a few steps further. The syntax is obviously far from any C dialect
 and many common constructs (e.g., classes, mutability and operators) are
 forbidden by design.
 
+Many of these constraints are bound to give rise to their fair share of
+controversy. However, the central character -
+[Yegor Bugayenko](https://www.yegor256.com/about-me.html), chairman of the
+[International Conference on Code Quality (ICCQ)](https://www.iccq.ru) - ought
+to hardly be a stranger to such disagreements: He has promoted and defended
+these design principles for years and implemented them (discounting the
+limitations of conventional languages) in more than a few open source projects.
+
 `mvn compile`
 
 `java -cp target/classes:target/eo-runtime.jar org.eolang.phi.Main sandbox.app YEAR`
