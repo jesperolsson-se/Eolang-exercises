@@ -35,6 +35,14 @@ to hardly be a stranger to such disagreements: He has promoted and defended
 these design principles for years and implemented them (discounting the
 limitations of conventional languages) in more than a few open source projects.
 
+But that's enough background. Let's get started!
+
+## Hello world!
+
+`mvn -f helloworld/pom.xml clean compile`
+
+`java -cp helloworld/target/classes:helloworld/target/eo-runtime.jar org.eolang.phi.Main sandbox.app`
+
 `mvn compile`
 
 `java -cp target/classes:target/eo-runtime.jar org.eolang.phi.Main sandbox.app YEAR`
