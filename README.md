@@ -39,6 +39,11 @@ But that's enough background. Let's get started!
 
 ## Hello world!
 
+Tradition dictates that we begin with the one program that every programmer
+knows: Print a hardcoded text to standard output. My solution in EO can be
+found [here](./helloworld/eo/helloworld.eo)).
+To compile and run the code, respectively, execute the following commands.
+
 `mvn -f helloworld/pom.xml clean compile`
 
 `java -cp helloworld/target/classes:helloworld/target/eo-runtime.jar org.eolang.phi.Main sandbox.app`
