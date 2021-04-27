@@ -48,6 +48,11 @@ To compile and run the code, respectively, execute the following commands.
 
 `java -cp helloworld/target/classes:helloworld/target/eo-runtime.jar org.eolang.phi.Main sandbox.app`
 
+It's difficult to get a feel for a language from such a limited example, but
+it still suffices to highlight a couple of thing of note. Besides some choices
+in the language design (e.g., enforced indentation and no static typing
+), we see three peculiar constructs: `[]`, `>` and `@`.
+
 `mvn compile`
 
 `java -cp target/classes:target/eo-runtime.jar org.eolang.phi.Main sandbox.app YEAR`
