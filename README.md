@@ -53,6 +53,11 @@ it still suffices to highlight a couple of thing of note. Besides some choices
 in the language design (e.g., enforced indentation and no static typing
 ), we see three peculiar constructs: `[]`, `>` and `@`.
 
+The first construct, `[]`, tells us what the object needs to know to do what it
+does. In this case, the construct is empty because our program already knows
+everything it needs to know. That is, all information required to print "Hello
+world!" to standard output is already encapsulated in the `app` object.
+
 `mvn compile`
 
 `java -cp target/classes:target/eo-runtime.jar org.eolang.phi.Main sandbox.app YEAR`
