@@ -58,6 +58,12 @@ does. In this case, the construct is empty because our program already knows
 everything it needs to know. That is, all information required to print "Hello
 world!" to standard output is already encapsulated in the `app` object.
 
+Next, `>` is related to the previous construct. Similar to other arrows, it
+directs the left operand into the one on the right. For instance, `[] > app`
+can be understood as someone needs to know something (`[]` i.e., nothing) and
+that someone is `app`. However, we also note that the operator is not only used
+in conjunction with `[]`, for example on the line `stdout > @`.
+
 `mvn compile`
 
 `java -cp target/classes:target/eo-runtime.jar org.eolang.phi.Main sandbox.app YEAR`
