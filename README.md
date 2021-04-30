@@ -64,6 +64,11 @@ can be understood as someone needs to know something (`[]` i.e., nothing) and
 that someone is `app`. However, we also note that the operator is not only used
 in conjunction with `[]`, for example on the line `stdout > @`.
 
+Finally, the third construct, `@`, is EO's symbol for a decoration. For
+example, we can interpret `stdout > @` as the enclosing object (`app`)
+commiting to expanding its contact to include that of `stdout` - although `app`
+will fulfill those parts by subcontracting `stdout`.
+
 `mvn compile`
 
 `java -cp target/classes:target/eo-runtime.jar org.eolang.phi.Main sandbox.app YEAR`
