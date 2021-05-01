@@ -69,6 +69,12 @@ example, we can interpret `stdout > @` as the enclosing object (`app`)
 commiting to expanding its contact to include that of `stdout` - although `app`
 will fulfill those parts by subcontracting `stdout`.
 
+Next, having considered these three constructs in isolation, let us reassemble
+the original program. It now becomes clearer that the primary hierarchy in
+eolang - i.e., what the indentation emphasises - is encapsulation. Our program
+is an object, `app` that encapsulates a representation of standard output,
+`stdout`, which in turn encapsulates a text, `"Hello world!"`.
+
 `mvn compile`
 
 `java -cp target/classes:target/eo-runtime.jar org.eolang.phi.Main sandbox.app YEAR`
