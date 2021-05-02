@@ -73,7 +73,18 @@ Next, having considered these three constructs in isolation, let us reassemble
 the original program. It now becomes clearer that the primary hierarchy in
 eolang - i.e., what the indentation emphasises - is encapsulation. Our program
 is an object, `app` that encapsulates a representation of standard output,
-`stdout`, which in turn encapsulates a text, `"Hello world!"`.
+`stdout`, which in turn encapsulates a text, `"Hello world!"`. The equivalent
+in a more conventional (pseudeo-)syntax, might look similar to below.
+
+```
+class app {
+  origin := new stdout(new text("Hello world!"));
+
+  function apply() {
+    origin.apply();
+  }
+}
+```
 
 `mvn compile`
 
