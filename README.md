@@ -89,6 +89,11 @@ class app {
 
 ![](./helloworld/resources/eo.svg "Fig 1. Encapsulation of Helloworld.")
 
+What we see is that our inner-most objects are enclosed by another object that
+provides just a thin sheet of functionality. Then that object, in turn, is
+similarly enclosed. With each level, our model becomes richer and richer while
+keeping each component small and managable.
+
 `mvn compile`
 
 `java -cp target/classes:target/eo-runtime.jar org.eolang.phi.Main sandbox.app YEAR`
