@@ -94,6 +94,12 @@ provides just a thin sheet of functionality. Then that object, in turn, is
 similarly enclosed. With each level, our model becomes richer and richer while
 keeping each component small and managable.
 
+From this point of view, we can see that EO has the nice property of being
+lazy. The concern of constructing our program instance (i.e., `eo := new app()`
+) is cleanly separated from the concern of execution (i.e., `eo.apply()`). Like
+a clockwork toy of old, we prepare our program by winding it up and then, when
+the time is right, we release it and let it live its own life.
+
 `mvn compile`
 
 `java -cp target/classes:target/eo-runtime.jar org.eolang.phi.Main sandbox.app YEAR`
