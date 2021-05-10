@@ -1,8 +1,8 @@
 # Eolang-exercises
 
 Object-oriented (OO) design is a very powerful approach for modelling real-world
-problem domains, but of the programming languages popularly thought of as
-"OO" few readily lend themselves to authentic object thinking - at least, that
+problem domains, but out of the programming languages popularly thought of as
+"OO", few readily lend themselves to authentic object thinking - at least, that
 appears to be the rationale behind the development of
 [eolang](https://github.com/cqfn/eo).
 
@@ -20,12 +20,11 @@ empathise with their notion of inauthenticity. The paradigm is often criticised
 for design constructs that run in counter with the fundamental concepts, simply
 because the program was implemented in, e.g., Java or C#.
 
-However, eolang looks like a fun puzzle even if we ignore the philsophical
-aspects. Even in normal situations, picking up a new language is likely to
-alter some aspect of how you think approach some problem or another, but EO
-takes this a few steps further. The syntax is obviously far from any C dialect
-and many common constructs (e.g., classes, mutability and operators) are
-forbidden by design.
+Even if we ignore the philosophical aspects, eolang does look like a fun
+puzzle. Picking up a new language is likely to alter some way of how you think
+to approach some problem or another, but EO takes this a few steps further. The
+syntax is obviously far from any C dialect and many common constructs (e.g.,
+classes, mutability and operators) are forbidden by design.
 
 Many of these constraints are bound to give rise to their fair share of
 controversy. However, the central character -
@@ -72,7 +71,7 @@ will fulfill those parts by subcontracting `stdout`.
 Next, having considered these three constructs in isolation, let us reassemble
 the original program. It now becomes clearer that the primary hierarchy in
 eolang - i.e., what the indentation emphasises - is encapsulation. Our program
-is an object, `app` that encapsulates a representation of standard output,
+is an object, `app`, that encapsulates a representation of standard output,
 `stdout`, which in turn encapsulates a text, `"Hello world!"`. The equivalent
 in a more conventional (pseudeo-)syntax, might look similar to below and is
 illustrated in Fig 1.
