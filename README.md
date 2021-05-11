@@ -101,6 +101,16 @@ the time is right, we release it and let it live its own life.
 
 Thus, our first EO exercise is concluded. So far, we've seen but a snippet of code, but already have we encountered a somewhat esoteric syntax and language constructs. Already, I think it's safe to say that EO will challenge your average programmer's cognition - and in a quite good way at that!
 
+## Friends of Ten
+
+Let's continue our exploration with a little maths game that is often used in
+children's education: Friends of Ten. The exercise is nothing special - when
+asked about a number [1, 9], respond with the number that would bring their sum
+to 10 - but should introduce us to some important fundamentals for writing
+useful programs.
+
+
+
 `mvn compile`
 
 `java -cp target/classes:target/eo-runtime.jar org.eolang.phi.Main sandbox.app YEAR`
