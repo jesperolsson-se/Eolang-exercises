@@ -107,7 +107,12 @@ Let's continue our exploration with a little maths game that is often used in
 children's education: Friends of Ten. The exercise is nothing special - when
 asked about a number [1, 9], respond with the number that would bring their sum
 to 10 - but should introduce us to some important fundamentals for writing
-useful programs.
+useful programs. As opposed to our "Hello World!" program, let's go about this
+is a slightly more structured way.
+
+First, we create the simplest possible "Friend of Ten" we can imagine: A
+program that neither validates input nor prints. The code for this program can
+be found [here](./friendsoften/eo/friend.eo)).
 
 
 
