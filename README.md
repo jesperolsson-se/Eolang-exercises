@@ -114,6 +114,9 @@ First, we create the simplest possible "Friend of Ten" we can imagine: A
 program that neither validates input nor prints. The code for this program can
 be found [here](./friendsoften/eo/friend.eo)).
 
+Of course, we want to create some (unit) tests for this object. This requires
+us to first add a dependency on JUnit in
+[our POM file](friendsoften/pom.xml#L94-L98).
 
 
 `mvn compile`
