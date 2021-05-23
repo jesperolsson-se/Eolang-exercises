@@ -116,7 +116,11 @@ be found [here](./friendsoften/eo/friend.eo)).
 
 Of course, we want to create some (unit) tests for this object. This requires
 us to first add a dependency on JUnit in
-[our POM file](friendsoften/pom.xml#L94-L98).
+[our POM file](friendsoften/pom.xml#L94-L98). Second, we create a small object
+that encapsulates our test. In
+[this example](./friendsoften/eo/tests/friendTest.eo), the test will determine
+if our `friend` object can respond with the correct answer (i.e., `7`) when
+asked who the pair of `3` is.
 
 
 `mvn compile`
