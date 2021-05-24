@@ -122,6 +122,15 @@ that encapsulates our test. In
 if our `friend` object can respond with the correct answer (i.e., `7`) when
 asked who the pair of `3` is.
 
+By compiling and executing our test (note the "Test" was appended to the method
+name), we can see that the exit code indicates that the program could be run
+successfully.
+
+```
+mvn -f friendsoften/pom.xml clean compile
+java -cp friendsoften/target/classes:friendsoften/target/eo-runtime.jar org.eolang.phi.Main sandbox.pairThreeTest
+echo $?
+```
 
 `mvn compile`
 
