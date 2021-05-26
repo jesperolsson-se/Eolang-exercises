@@ -132,6 +132,11 @@ java -cp friendsoften/target/classes:friendsoften/target/eo-runtime.jar org.eola
 echo $?
 ```
 
+As an aside, [here](./friendsoften/eo/tests/faultyTest.eo) is a test that will
+fail when run. Please note how executing `incorrectPairTest` will throw an
+exception and return a non-zero exit code.
+
+
 `mvn compile`
 
 `java -cp target/classes:target/eo-runtime.jar org.eolang.phi.Main sandbox.app YEAR`
