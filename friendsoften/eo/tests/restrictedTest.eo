@@ -1,0 +1,20 @@
++package sandbox
++alias restricted sandbox.restricted
++junit
+
+[] > rejectTooSmall
+  not. > @
+    eq.
+      restricted 0
+      "10"
+
+[] > rejectTooLarge
+  not. > @
+    eq.
+      restricted 10
+      "0"
+
+[] > clearAllowed
+  eq. > @
+    restricted 1
+    "9"
