@@ -136,6 +136,14 @@ As an aside, [here](./friendsoften/eo/tests/faultyTest.eo) is a test that will
 fail when run. Please note how executing `incorrectPairTest` will throw an
 exception and return a non-zero exit code.
 
+So far, we've implemented `friend`, which is the simplest possible solution to
+our problem. Next up, we want a solution that's a little bit stricter: As
+mentioned above, for the children's game, the domain of our function is [1, 9].
+However, we don't want to modify our object to impose this rule, as that would
+make it too rigid. Instead, we create a new object, `restricted`, that will
+delegate to the former ([code](./friendsoften/eo/restritced.eo) and
+[tests](./friendsoften/eo/tests/restrictedTest.eo)).
+
 
 `mvn compile`
 
