@@ -144,6 +144,11 @@ make it too rigid. Instead, we create a new object, `restricted`, that will
 delegate to the former ([code](./friendsoften/eo/restritced.eo) and
 [tests](./friendsoften/eo/tests/restrictedTest.eo)).
 
+Note that `restricted`, unfortunately, does two things: Verifies the range
+_and_ transforms the result from an integer to a string. The reason is that I
+(so far) haven't found out how to indicate user errors. For now, we'll simply
+return a special string instead.
+
 
 `mvn compile`
 
