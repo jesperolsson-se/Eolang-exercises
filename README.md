@@ -149,6 +149,18 @@ _and_ transforms the result from an integer to a string. The reason is that I
 (so far) haven't found out how to indicate user errors. For now, we'll simply
 return a special string instead.
 
+Third and finally, we create the entry point to our program: The `app` object.
+This is rather similar to the one created in the previous exercise, but it does
+accept input from standard in. To try it out, compile and execute it with a few
+different values.
+
+```
+mvn -f friendsoften/pom.xml clean compile
+java -cp friendsoften/target/classes:friendsoften/target/eo-runtime.jar org.eolang.phi.Main sandbox.app 3
+java -cp friendsoften/target/classes:friendsoften/target/eo-runtime.jar org.eolang.phi.Main sandbox.app -3
+java -cp friendsoften/target/classes:friendsoften/target/eo-runtime.jar org.eolang.phi.Main sandbox.app 100
+```
+
 
 `mvn compile`
 
