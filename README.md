@@ -161,6 +161,11 @@ java -cp friendsoften/target/classes:friendsoften/target/eo-runtime.jar org.eola
 java -cp friendsoften/target/classes:friendsoften/target/eo-runtime.jar org.eolang.phi.Main sandbox.app 100
 ```
 
+As before, the object composition of our program (the encapsulations) is
+illustrated below, in Fig 2.
+
+![](./friendsoften/resources/eo.svg "Fig 2. Encapsulation of Friends of Ten.")
+
 
 `mvn compile`
 
