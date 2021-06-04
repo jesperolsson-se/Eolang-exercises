@@ -166,6 +166,11 @@ illustrated below, in Fig 2.
 
 ![](./friendsoften/resources/eo.svg "Fig 2. Encapsulation of Friends of Ten.")
 
+To reiterate, this exercise demonstrated how we can decompose a problem to be
+solved by multiple small objects that collaborate. We partitioned them into
+their own files and designed their boundaries such that the system is better
+equipped to evolve to meet contingent changes. Additionally, we had a first
+look into the fundamentals for unit testing our objects.
 
 `mvn compile`
 
