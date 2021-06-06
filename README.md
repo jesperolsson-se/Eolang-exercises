@@ -101,6 +101,77 @@ the time is right, we release it and let it live its own life.
 
 Thus, our first EO exercise is concluded. So far, we've seen but a snippet of code, but already have we encountered a somewhat esoteric syntax and language constructs. Already, I think it's safe to say that EO will challenge your average programmer's cognition - and in a quite good way at that!
 
+## Friends of Ten
+
+Let's continue our exploration with a little maths game that is often used in
+children's education: Friends of Ten. The exercise is nothing special - when
+asked about a number [1, 9], respond with the number that would bring their sum
+to 10 - but should introduce us to some important fundamentals for writing
+useful programs. As opposed to our "Hello World!" program, let's go about this
+is a slightly more structured way.
+
+First, we create the simplest possible "Friend of Ten" we can imagine: A
+program that neither validates input nor prints. The code for this program can
+be found [here](./friendsoften/eo/friend.eo)).
+
+Of course, we want to create some (unit) tests for this object. This requires
+us to first add a dependency on JUnit in
+[our POM file](friendsoften/pom.xml#L94-L98). Second, we create a small object
+that encapsulates our test. In
+[this example](./friendsoften/eo/tests/friendTest.eo), the test will determine
+if our `friend` object can respond with the correct answer (i.e., `7`) when
+asked who the pair of `3` is.
+
+By compiling and executing our test (note the "Test" was appended to the method
+name), we can see that the exit code indicates that the program could be run
+successfully.
+
+```
+mvn -f friendsoften/pom.xml clean compile
+java -cp friendsoften/target/classes:friendsoften/target/eo-runtime.jar org.eolang.phi.Main sandbox.pairThreeTest
+echo $?
+```
+
+As an aside, [here](./friendsoften/eo/tests/faultyTest.eo) is a test that will
+fail when run. Please note how executing `incorrectPairTest` will throw an
+exception and return a non-zero exit code.
+
+So far, we've implemented `friend`, which is the simplest possible solution to
+our problem. Next up, we want a solution that's a little bit stricter: As
+mentioned above, for the children's game, the domain of our function is [1, 9].
+However, we don't want to modify our object to impose this rule, as that would
+make it too rigid. Instead, we create a new object, `restricted`, that will
+delegate to the former ([code](./friendsoften/eo/restritced.eo) and
+[tests](./friendsoften/eo/tests/restrictedTest.eo)).
+
+Note that `restricted`, unfortunately, does two things: Verifies the range
+_and_ transforms the result from an integer to a string. The reason is that I
+(so far) haven't found out how to indicate user errors. For now, we'll simply
+return a special string instead.
+
+Third and finally, we create the entry point to our program: The `app` object.
+This is rather similar to the one created in the previous exercise, but it does
+accept input from standard in. To try it out, compile and execute it with a few
+different values.
+
+```
+mvn -f friendsoften/pom.xml clean compile
+java -cp friendsoften/target/classes:friendsoften/target/eo-runtime.jar org.eolang.phi.Main sandbox.app 3
+java -cp friendsoften/target/classes:friendsoften/target/eo-runtime.jar org.eolang.phi.Main sandbox.app -3
+java -cp friendsoften/target/classes:friendsoften/target/eo-runtime.jar org.eolang.phi.Main sandbox.app 100
+```
+
+As before, the object composition of our program (the encapsulations) is
+illustrated below, in Fig 2.
+
+![](./friendsoften/resources/eo.svg "Fig 2. Encapsulation of Friends of Ten.")
+
+To reiterate, this exercise demonstrated how we can decompose a problem to be
+solved by multiple small objects that collaborate. We partitioned them into
+their own files and designed their boundaries such that the system is better
+equipped to evolve to meet contingent changes. Additionally, we had a first
+look into the fundamentals for unit testing our objects.
+
 `mvn compile`
 
 `java -cp target/classes:target/eo-runtime.jar org.eolang.phi.Main sandbox.app YEAR`

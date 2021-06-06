@@ -1,0 +1,8 @@
++package sandbox
++alias friend sandbox.friend
++junit
+
+[] > incorrectPair
+  eq. > @
+    (friend 1).ofTen
+    1

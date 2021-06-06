@@ -1,0 +1,8 @@
++package sandbox
++alias friend sandbox.friend
++junit
+
+[] > pairThree
+  eq. > @
+    (friend 7).ofTen
+    3
