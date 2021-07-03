@@ -112,7 +112,7 @@ is a slightly more structured way.
 
 First, we create the simplest possible "Friend of Ten" we can imagine: A
 program that neither validates input nor prints. The code for this program can
-be found [here](./friendsoften/eo/friend.eo)).
+be found [here](./friendsoften/eo/friend.eo).
 
 Of course, we want to create some (unit) tests for this object. This requires
 us to first add a dependency on JUnit in
@@ -141,7 +141,7 @@ our problem. Next up, we want a solution that's a little bit stricter: As
 mentioned above, for the children's game, the domain of our function is [1, 9].
 However, we don't want to modify our object to impose this rule, as that would
 make it too rigid. Instead, we create a new object, `restricted`, that will
-delegate to the former ([code](./friendsoften/eo/restritced.eo) and
+delegate to the former ([code](./friendsoften/eo/restricted.eo) and
 [tests](./friendsoften/eo/tests/restrictedTest.eo)).
 
 Note that `restricted`, unfortunately, does two things: Verifies the range
